@@ -5,8 +5,10 @@
 
 ### {{ chartmap[0] }}
 
+
+
 | Version | Date | App. version |
 {% for chart in sortedcharts %}
 | [{{ chart.version }}]({{ chart.urls[0] }}) | {{ chart.created | date_to_long_string }} | {{ chart.appVersion }} |
-{% endfor %}
+{% endfor -%}
 {% endfor %}
