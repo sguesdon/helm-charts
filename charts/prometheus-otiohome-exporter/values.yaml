@@ -2,6 +2,16 @@
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
+otio:
+  host: xxxxxxxxx
+  profile:
+    place_id: xxxxxxx
+  auth:
+    host: xxxxxxx
+    client_id: xxxxxxx
+    access_token: xxxxxxxxxx
+    refresh_token: xxxxxxxxxxxx
+
 replicaCount: 1
 
 image:
