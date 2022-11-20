@@ -21,3 +21,4 @@ Jump to:
 {%- for chart in sortedcharts -%}
 | [{{ chart.version }}]({{ chart.urls[0] }}) | {{ chart.created | date_to_long_string }} | {{ chart.appVersion }} |
 {% endfor %}
+{% endfor %}
