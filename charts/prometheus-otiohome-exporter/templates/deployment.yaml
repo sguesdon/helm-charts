@@ -46,6 +46,19 @@ spec:
             {{- toYaml .Values.securityContext | nindent 12 }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: OTIO_ACCESS_TOKEN
+              value: "{{ .Values.otio.auth.access_token }}"
+            - name: OTIO_REFRESH_TOKEN
+              value: "{{ .Values.otio.auth.refresh_token }}"
+            - name: OTIO_PLACE_ID
+              value: "{{ .Values.otio.profile.place_id }}"
+            - name: OTIO_HOST
+              value: "{{ .Values.otio.host }}"
+            - name: OTIO_CLIENT_ID
+              value: "{{ .Values.otio.auth.client_id }}"
+            - name: OTIO_OPENID_HOST
+              value: "{{ .Values.otio.auth.host }}"
           ports:
             - name: http
               containerPort: 9100
