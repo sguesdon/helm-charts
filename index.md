@@ -5,10 +5,10 @@
 
 ### {{ chartmap[0] }}
 
-
+[Homepage](https://github.com/sguesdon/helm-charts/tree/main/charts/{{sortedcharts[0].name}})
 
 | Version | Date | App. version |
-{% for chart in sortedcharts %}
+{%- for chart in sortedcharts %}
 | [{{ chart.version }}]({{ chart.urls[0] }}) | {{ chart.created | date_to_long_string }} | {{ chart.appVersion }} |
-{% endfor -%}
+{%- endfor -%}
 {% endfor %}
