@@ -1,0 +1,11 @@
+---
+layout: none
+---
+{%- assign prometheus_otiohome_exporter = site.data.index.entries.prometheus-otiohome-exporter | sort: 'created' | reverse -%}
+{%- assign prometheus_otiohome_exporter_latest = prometheus_otiohome_exporter | first -%}
+
+{
+    "prometheus-otiohome-exporter": {
+        "latest": "{{ prometheus_otiohome_exporter_latest.version }}"
+    }
+}
