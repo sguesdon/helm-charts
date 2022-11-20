@@ -3,6 +3,16 @@ entries:
   prometheus-otiohome-exporter:
   - apiVersion: v2
     appVersion: v0.0.10
+    created: "2022-11-20T20:45:02.136517691Z"
+    description: A Helm chart for export otiohome metrics
+    digest: 5e78217126c5ff4795607a426ca9c07ff55a1d34ae88dc2e93aefa25cc49b3f0
+    name: prometheus-otiohome-exporter
+    type: application
+    urls:
+    - https://github.com/sguesdon/helm-charts/releases/download/prometheus-otiohome-exporter-0.1.3/prometheus-otiohome-exporter-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: v0.0.10
     created: "2022-11-20T12:11:38.336059104Z"
     description: A Helm chart for export otiohome metrics
     digest: d5510223b68db7f353cec21a4737dcb9af5b29cc1b459471ae0619c77b9a170b
@@ -21,4 +31,4 @@ entries:
     urls:
     - https://github.com/sguesdon/helm-charts/releases/download/prometheus-otiohome-exporter-0.1.1/prometheus-otiohome-exporter-0.1.1.tgz
     version: 0.1.1
-generated: "2022-11-20T12:11:38.336067604Z"
+generated: "2022-11-20T20:45:02.136530491Z"
